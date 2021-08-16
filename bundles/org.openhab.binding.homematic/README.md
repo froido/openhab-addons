@@ -675,6 +675,12 @@ Examples: HmIP-BROLL, HmIP-FROLL, HmIP-BBL, HmIP-FBL and HmIP-DRBLI4
 | openHAB | 0%   | 100%   |
 | CCU     | 100% | 0%     |
 
+**No Pong received!**
+
+When running openHAB in a Docker container the `callbackHost` option for the gateway has to be set.
+Otherwise a bidirectional communication with the gateway will not be established.
+
+
 ### Debugging and Tracing
 
 If you want to see what's going on in the binding, switch the log level to DEBUG in the Karaf console
